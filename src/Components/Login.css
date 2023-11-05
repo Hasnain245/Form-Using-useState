@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+.LoginPage {
+    background-image: url('LoginBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 42px;
+    margin-top: 20px;
+}
+
+.header {
+    width: auto;
+    height: auto;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    margin: 132px auto;
+    border: 1px solid rgb(68, 66, 66);
+    border-radius: 3px;
+}
+
+.down {
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+.LoginPage input[type=email] {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 2px;
+    padding: 10px 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(168, 167, 167);
+    outline: none;
+    color: white;
+
+}
+
+.LoginPage input[type=password] {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 2px;
+    padding: 10px 0px;
+    margin-top: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(168, 167, 167);
+    outline: none;
+    color: white;
+
+}
+
+input::placeholder {
+    color: rgb(187, 178, 178);
+    font-style: italic;
+}
+
+.LoginPage input[type=checkbox] {
+
+    background-color: rgb(255, 255, 255);
+}
+
+.down label[for="rememberpassword"] {
+    color: white;
+    font-size: 14px;
+    margin-right: 85px;
+
+}
+
+#forgetPass {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+#forgetPass:hover{
+    text-decoration: underline;
+}
+
+.LoginPage button {
+    width: 80%;
+    margin: 11px 39px;
+    padding: 8px 10px;
+    cursor: pointer;
+    color: black;
+    background: white;
+    border: 1px solid rgb(76 75 75);
+    border-radius: 3px;
+    font-weight: 800;
+    outline: none;
+}
+
+.end {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.end p{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 14px;
+}
+
+
+.end button{
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    background: none;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 0 0 0 3px;
+    font-weight: normal;
+    transition: all 0.3s ease;
+}
+.end button:hover{
+    text-decoration: underline;
+}
+
+
+
+@media (max-width:400px) {
+    
+
+    .down label[for="rememberpassword"] {
+        margin-right: 34px;
+        font-size: 12px;
+
+    }
+
+    #forgetPass {
+        font-size: 12px;
+
+    }
+
+    .LoginPage button {
+        margin: 0px 28px;
+
+    }
+}
